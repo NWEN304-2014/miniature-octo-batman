@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Do You Even Bomb</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css"/>
+	<link rel="stylesheet" href="stylesheets/skeleton.css"/>
+	<link rel="stylesheet" href="stylesheets/layout.css"/>
+	<link rel="stylesheet" href="stylesheets/weather.css"/>
+	
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="stylesheets/jquery.mobile-1.4.2.min.css" />
+    <script src="javascripts/jquery-1.11.1.min.js"></script>
+	</script>
+    <script src="javascripts/jquery.mobile-1.4.2.min.js"></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC_35PqNHLhb9x3l9mInCVWTnFamYL9f4"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=drawing"></script>-->
+
+    <script src="javascripts/marker.js"></script>
+	
+	</head>
+	<body>
+	<div id="wrapper">
+	
+<div data-role="page" id="page_login"><!--page 1-->
+	<div class="container">
+		<div class="sixteen columns">
+			<div>
+			<h1 id="title-login"><img src="images/Title3.png" style="width:100px;height:100px;"></h1>
+				<div class="container">
+					<div class="eight columns feature">
+						<!-- LOGIN FORM -->
+							<form action="/" method="post">
+								<div class="form-group">
+									<label>Email</label>
+									<input type="text" class="form-control" name="email">
+								</div>
+								<div class="form-group">
+									<label>Password</label>
+									<input type="password" class="form-control" name="password">
+								</div>
+
+								<button><a href="/profile" rel="external">Login</a></button>
+
+								<!--<button type="submit" class="btn btn-warning btn-lg">Login</button>-->
+								<!--I have blocked out the above and added a basic link for now just to connect the files-->
+							</form>
+							<hr>
+							<p>Sign in with Facebook<a href="auth/facebook"> here!</a></p>
+
+								<p>Need an account? <a href="signup.ejs" rel="external">Signup</a></p>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

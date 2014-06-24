@@ -1,0 +1,764 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+/* #Lists (baseline corrections)
+================================================== */
+ul,ol {margin-bottom: 21px;}
+ul ul, ul ol,
+ol ol, ol ul {margin: 7px 0 7px 30px;}
+li ul li, ul ol li {margin-bottom: 7px;}
+li{ line-height: 21px; margin-bottom: 14px;}
+
+
+/* #Site Styles
+================================================== */
+
+*{
+	moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+
+
+body {
+text-align:center;
+}
+
+#wrapper {
+margin: 0 auto;
+width: 320px; /* Replace the xxxx with the the width of your site (eg 800px)*/
+height: 480px;
+text-align:left;
+}
+
+.form{
+	margin-bottom: 20px;
+	font-size: 1em;
+	font-family: helvetica;	
+	margin-left: -4%;
+}
+.form label{
+	margin-bottom: .5em;
+}
+.form h2{
+	font-family: helvetica;
+	margin-bottom: 1em;
+}
+.form input, textarea{
+	
+	border:  1px solid #E5E5E5;
+	width:100%;
+	color: #999999;
+	box-shadow: rgba(0,0,0,0.1) 0px 0px 4px;	
+}
+
+#page_login{
+	background-color: #FF9966;
+	font-family: Lobster;
+}
+
+#title-login{
+	margin-left: 0%;
+	margin-top: 10%;
+}
+
+/*menu page*/
+
+#title{
+	margin-top: 22%;
+	margin-left: 2%;
+
+}
+
+#first-heading{
+	font-family: Open Sans;
+	color: black;
+	margin-top: 5%;
+}
+
+#first{
+	z-index: 5;
+}
+
+#bodyContent{
+	margin-top: 5%;
+	font-family: Open Sans;
+}
+
+#content{
+
+}
+
+#page_1{
+	background-color: #FF9966;
+}
+
+.name{
+	font-family: Lobster;
+}
+
+.email{
+	font-family: Lobster;
+}
+
+#main-container{
+    border:1px solid black;
+    width:320px;
+    height:480px;
+    margin:0 auto;
+    position:relative;
+    top:20px;
+}
+
+#top_color{
+	background-color:#FF6666; 
+}
+
+#top{
+	background-color: #FF6666;
+    margin-top: 0%;
+	margin-left: -30%;
+	margin-right: -30%;
+
+    
+    
+
+}
+#middle{
+	background-color: #FFFF66;
+    margin-left: -30%;
+	margin-right: -30%;
+	
+    
+
+}
+#bottom{
+	background-color: #00CC99;
+	margin-left: -30%;
+	margin-right: -30%;
+	margin-bottom: 0%;
+	
+    
+
+}
+
+#slide-menu{
+	list-style: none;
+	margin-top: -100%;
+	margin-left: -60%;
+	padding-bottom: 100%;
+	padding-top: 100%;
+}
+
+h1{
+	text-align: center;
+     
+}
+
+#weather-title{
+	text-align: center;
+	margin-top: 10%;
+	font-family:Lobster;
+
+}
+
+
+/*Bomb-Map-Weather*/
+
+#Bomb-Map{
+	background-color: #9966FF;
+
+}
+
+#map_icon{
+	height: 20%;
+	width: 30%;
+
+	margin-left: 31%;
+	margin-bottom: 3%;
+	
+}
+
+#about_icon{
+	height: 20%;
+	width: 30%;
+
+	margin-left:48%;
+	margin-bottom: 3%;
+	
+}
+
+#weather_icon{
+	height: 20%;
+	width: 30%;
+
+	margin-left: 42%;
+	margin-bottom: 3%;
+	margin-top: -15%;
+	
+}
+
+#upload_icon{
+	height: 20%;
+	width: 30%;
+
+	margin-left: 31%;
+	margin-bottom: 3%;
+	
+}
+
+
+
+#Profile{
+	background-color: #FF3333;
+
+}
+
+#profile_icon{
+	height: 20%;
+	width: 30%;
+
+	margin-left: 32%;
+	margin-bottom: 3%;
+	
+}
+
+#Upload{
+	background-color: #FF6666;
+
+}
+
+#menu-upload{
+top: 30px;
+right: 13px;
+	position: absolute;
+	z-index: 1;
+}
+
+#film_icon{
+	height: 20%;
+	width: 30%;
+
+	margin-left: 32%;
+	margin-bottom: 3%;
+
+}
+
+#Bomb-Template{
+	background-color: #9933CC;
+}
+
+#Weatherpage{
+	background-color: #9966FF;
+	font-family: Lobster;
+}
+
+#Video{
+	margin-top: 10%;
+	
+
+}
+
+#horizontal-scroll{
+	font-size: 2em;
+	margin-top: 20%;
+	margin-left: 7%
+
+}
+
+#img1{
+	padding: 2%
+}
+#img2{
+	padding: 2%
+}
+#img3{
+	padding: 2%
+}
+
+#map_wrapper {
+    height: 400px;
+}
+
+#map-canvas {
+margin-left: 0%;
+margin-top: -3%;
+}
+
+/*Profile*/
+
+#profile_name {
+ 	font-family: Lobster;
+
+    z-index: 1;
+    position: absolute;
+    position: center;
+    margin-top: -35%;
+    margin-left: 30%;
+    font-size: 30px;
+margin-bottom: 14px;
+color: #FFFFFF
+
+
+}
+
+
+
+/* resize images */
+.profile_name img {
+    width: 10%;
+    margin-right: 20%;
+    height: auto;
+}
+
+#profile-image{
+z-index: 1;
+position: absolute;
+margin:0 auto;
+width: 50%;
+margin-top: -70%;
+margin-left: 28%;
+
+}
+
+#weather-logo{
+	margin-top: 5%;
+	font-family: Lobster;
+	font-size: 1em;
+	color: white;
+
+}
+
+#upper-section{
+	width: 100%;
+}
+
+
+
+#upper-background{
+	margin-left: -5%;
+	margin-top: -10%;
+	margin-right: 800px;
+	width: 500px;
+	height:250px;
+	overflow: hidden;
+}
+
+#upper-column{
+	background-color: #FF6666;
+	width: 110%;
+	margin-left: -5%;
+	height: 100%;
+
+}
+
+#menu-button{
+top: 30px;
+right: 13px;
+	position: absolute;
+	z-index: 1;
+	
+}
+
+#map-canvas{
+	margin-left: -5%;
+	margin-top: 3%;
+}
+
+#menu-button-weather{
+top: 30px;
+right: 13px;
+	position: absolute;
+	z-index: 1;
+}
+
+#menu-button-map{
+top: 30px;
+right: 13px;
+	position: absolute;
+	z-index: 1;
+}
+
+#sub-menu{
+
+	z-index: 3;
+	background-color:#FF6666;
+	margin-left: -5%;
+	margin-right: -5%;
+	margin-top: -5%;
+}
+
+#sub-menu-css { 
+	list-style-type:none; 
+    margin-top: -20%;
+    margin-left: 35%;
+    z-index: 2;
+ } 
+
+#submenu-css-2 { 
+	list-style-type:none; 
+    margin-top: 19%;
+    margin-left: 0%;
+    text-align: center;
+    z-index: 10;
+ }
+
+ #submenu-container-2{
+ 	z-index: 10;
+
+ }
+
+ #twitter-img{
+
+	margin-left: 5%;
+	margin-right: 5%;
+
+
+}
+
+#youtube-img{
+	margin-left: 5%;
+	margin-right: 5%;
+	
+}
+
+#facebook-img{
+	margin-left: 5%;
+	margin-right: 5%;
+	
+} 
+
+ 
+
+
+
+li { 
+	display:inline;
+    margin: 0%;
+
+
+ }
+
+ h1{
+ 	font-family: Lobster;
+ 	color: white;
+ 	margin-top: -5%;
+ 	z-index: 2;
+ }
+
+
+
+
+
+ #quote{
+ 	margin-top: 10%;
+ 	text-align: center;
+ 	font-size: 0.7em;
+ 	font-family: Open Sans;
+ 	color: white;
+ }
+
+ #about{
+ 	text-align: center;
+ 	top: 20%;
+ 	font-size: 0.7em;
+ 	font-family: Open Sans;
+ 	color: white;
+ }
+
+ #bottom-section-about{
+ 	top:40%;
+ 	opacity: 0;
+ 	-webkit-transition: All 1s ease-in-out;
+ }
+
+  #bottom-section-about.fade{
+  	top:80%;
+  	text-align: center;
+ 	opacity: 1;
+ 	-webkit-transition: All 1s ease-in-out;
+ 	font-family: Open Sans;
+ 	color: white;
+ }
+
+ #bottom-section-trophy{
+ 	margin-top:-30%;
+ 	position: absolute;
+ 	text-align: center;
+ 	opacity: 0;
+ 	-webkit-transition: All 1s ease-in-out;
+ 	font-family: Open Sans;
+ 	color: white;
+ }
+
+
+ #bottom-section-trophy.fade{
+ 	margin-top:-30%;
+ 	text-align: center;
+ 	opacity: 1;
+ 	-webkit-transition: All 1s ease-in-out;
+ 	font-family: Open Sans;
+ 	color: white;
+ }
+
+  #bottom-section-jumps{
+   top: -20px;
+   left: -120px;
+	position: absolute;
+	opacity: 0;
+ }
+
+
+ #bottom-section-jumps.fade{
+ 	margin-top:0%;
+ 	text-align: center;
+ 	opacity: 1;
+ 	-webkit-transition: All 1s ease-in-out;
+ 	font-family: Open Sans;
+ 	color: white;
+ }
+
+
+
+#about-img{
+
+	margin-left: -33%;
+
+
+}
+
+#trophy-img{
+	margin-left: 28%;
+	margin-bottom: 2%;
+	
+}
+
+#jumps-img{
+	margin-left: 35%;
+	margin-right: -10%;
+	
+}
+
+#legend{
+	background: white;
+    padding: 10px;
+  }
+
+#logout_icon{
+	margin-left: 40%;
+	margin-top: -15%;
+}
+
+#janszoon_icon{
+	margin-left: 40%;
+	margin-top: -15%;
+}
+
+
+
+/*weather*/
+
+
+
+#photos_taken{ 
+	top:350px;
+left: 40px;
+position: fixed;
+}
+
+#myStat{
+
+	top: 50px;
+	left: 30px;
+		position: absolute;
+
+}
+
+#videos_uploaded{ 
+	top:350px;
+left: 180px;
+position: fixed;
+}
+ #myStat1{
+
+	top: 50px;
+	left: 180px;
+	position: absolute;
+
+}
+#places_visited{ 
+	top:230px;
+left: 40px;
+position: fixed;
+}
+
+ #myStat3{
+top:250px;
+left: 40px;
+position: fixed;
+}
+
+#jumps_done{ 
+	top:230px;
+left: 190px;
+position: fixed;
+}
+ #myStat4{
+
+top:250px;
+left: 190px;
+position: fixed;
+}
+ 
+#open_font{
+font-family: 'Roboto', sans-serif;
+color: #000000;
+font-size: 20px;
+font-weight: 800 }
+
+#h6 {
+font-family: 'Roboto', sans-serif;
+font-weight: 100;
+color: #FFFFFF;
+font-size: 15px;
+text-align: center;
+letter-spacing:1px;
+ }
+
+
+#heading_font{
+	font-family: Lobster;
+	font-size: 40px;
+	text-align: center;
+	color: white;
+}
+
+#sign-up{
+	background-color:#FFFF66;
+	position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    font-family: Lobster;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+
+}
+
+#sign-up-title{
+	font-family: Lobster;
+	color: black;
+	text-align: center;
+}
+
+#bomb-videos{
+	margin-left: -2%;
+}
+
+/* #Gallery  Styles
+================================================== */
+#gallery-text{ 
+       position: absolute;
+       right: 100px;
+       top: 65px;
+       text-align: center;
+       font-family:Lobster;
+       text-align: center;
+
+}
+
+#gallery-div{
+	 background:#fff;
+  padding:20px;
+  padding-top:30px;
+  width:260px;
+  margin:50px auto;
+  box-shadow:15px 15px 0px rgba(0,0,0,.1);
+  position: center;
+  margin-left: auto ;
+  margin-right: auto ;
+  font-family:Lobster;
+  text-align: center;
+}
+
+#gallery_font
+ font-family:Lobster;
+
+
+#gallery-video{ 
+       position: absolute;
+       right: 105px;
+       top: 165px;
+       text-align: center;
+       font-family: Lobster;
+
+}
+
+#header{
+	position: absolute;
+
+}
+
+#Gallery1{
+	background-color: #00CC99;
+
+}
+
+#Gallery2{
+	background-color: #00CC99;
+
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+    }
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/

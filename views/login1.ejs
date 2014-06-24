@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Do You Even Bomb</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheets" href="../public/stylesheets/base.css">
+	<link rel="stylesheets" href="../public/stylesheets/skeleton.css">
+	<link rel="stylesheets" href="../public/stylesheets/layout.css">
+	<link rel="stylesheets" href="../public/stylesheets/weather.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheets" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheets" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	
+	</head>
+	<body>
+	<div id="wrapper">
+	
+<div data-role="page" id="page_1"><!--page 1-->
+	<div class="container">
+		<div class="sixteen columns">
+			<div id="title"><h1><img src="/views/images/Title3.png" style="width:100px;height:100px;"></h1>
+				<div class="container">
+					<div class="eight columns feature">
+						<!-- LOGIN FORM -->
+							<form action="/login" method="post">
+								<div class="form-group">
+									<label>Email</label>
+									<input type="text" class="form-control" name="email">
+								</div>
+								<div class="form-group">
+									<label>Password</label>
+									<input type="password" class="form-control" name="password">
+								</div>
+
+								<button type="submit" class="btn btn-warning btn-lg">Login</button>
+							</form>
+							<hr>
+
+								<p>Need an account? <a href="/signup">Signup</a></p>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+</body>

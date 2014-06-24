@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Do You Even Bomb</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/upload_style.css" media="screen" type="text/css" />
+	<link rel="stylesheet" href="stylesheets/weather.css" />
+	<link rel='stylesheet' type='text/css' href="stylesheets/styles.css" />
+	<link rel='stylesheet' type='text/css' href="stylesheets/jquery.pageslide.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="../../Fix%20352%206%20final/stylesheets/jquery.mobile-1.4.2.min.css" />
+    <script src="javascripts/jquery-1.11.1.min.js"></script>
+    <script src="javascripts/jquery.mobile-1.4.2.min.js"></script>
+
+    <!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=drawing"></script>
+
+    <script src="javascripts/marker.js"></script>
+
+
+</head>
+
+<body>
+<div id="heading_font_upload">Uploads</div>
+
+<div data-role="page" id="Upload">
+	<div class="container">
+		<div class="sixteen columns">
+			<div id="upload-font">
+				<ul id="scene" class="scene">
+					<li class="layer" data-depth=".1">
+						<form action="upload.htm" method="post" enctype="multipart/form-data">
+							<div id="upload_font">
+								<p>Images</p>
+							</div>
+				<input type="file" accept="image/*" capture>
+				<input type="submit" value="Upload">
+				<div id="upload_font">
+				<p>Videos</p>
+				</div>
+	<action="upload.htm" method="post" enctype="multipart/form-data">
+	<input type="file" accept="video/*" capture>
+	<input type="submit" value="Upload">
+</form>
+</div>
+
+<a href="#secondary" class="first"><div id="menu-upload"><img src="images/menu.png"  style="width:25px;height:25px;"></div></a>
+<script>
+	$("a.first").pageslide();
+</script>
+
+		</div>
+	</div>
+</div>
+</div>
+
+<div data-role="page" id="X"><!--page 2-->
+	<div class="container">
+		<div class="sixteen columns">
+			<div id="secondary">
+				<div id="slide-menu">
+				    <ul>
+				    <li><a href="/profile#Bomb-Map"><img id="map_icon" src="images/map-icon.png" style="width:25px;height:25px;"></a></li>
+				    <hr>
+				    <li><a href="/upload" rel="external"><img id="upload_icon" src="images/camera-icon-newX.png" style="width:30px;height:30px;"></a></li>
+				    <hr>
+				    <li><a href="/profile#Profile"><img id="about_icon" src="images/profile_front.png" style="width:30px;height:30px;"></a></li>
+				    <hr>
+				    <li><a href="/profile#Weatherpage"><img id="weather_icon" src="images/weather_icon.png" style="width:30px;height:30px;"></a></li>
+				    <hr>
+				    <li><a href="http://www.janszoon.org/"><img id="janszoon_icon" src="images/project-janzoon.png" style="width:30px;height:30px;"></a></li>
+				    <hr>
+				    <li><a href="index.html" rel="external"><img id="logout_icon" src="images/logo_out.png" style="width:40px;height:40px;"></a></li>
+				    </ul>
+				</div>
+			</div>
+         </div>
+    </div>
+</div>
+	<!--<script src="scripts/jquery.js"></script>-->
+	<script src="deploy/jquery.parallax.js"></script>
+	<script>
+
+	// Yep, that's it!
+	$('#scene').parallax();
+
+	</script>
+
+
+	<script type="javascripts/tabs.js"></script>
+    <script src="javascripts/jquery.flexslider.js"></script>
+    <script src="javascripts/Whatever.js"></script>
+    <script src="javascripts/jquery-profile.js"></script>
+
+    <script src="javascripts/jquery.pageslide.js"></script>
+    <script>
+        /* Default pageslide, moves to the right */
+        $(".first").pageslide();
+        
+        /* Slide to the left, and make it model (you'll have to call $.pageslide.close() to close) */
+        $(".second").pageslide({ direction: "left", modal: true });
+    </script>
+
+
+
+</body>
+</html>

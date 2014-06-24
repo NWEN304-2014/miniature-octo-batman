@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Do You Even Bomb</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css"/>
+	<link rel="stylesheet" href="stylesheets/skeleton.css"/>
+	<link rel="stylesheet" href="stylesheets/layout.css"/>
+	<link rel="stylesheet" href="stylesheets/upload_style.css" media="screen" type="text/css" />
+	<link rel="stylesheet" href="stylesheets/weather.css"/>
+	<link rel='stylesheet' type='text/css' href="stylesheets/styles.css" />
+	<link rel='stylesheet' type='text/css' href="stylesheets/jquery.pageslide.css" />
+	<link rel="stylesheet" href="stylesheets/animation.css"/>
+	<link rel="stylesheet" href="stylesheets/jquery.mobile-1.0a4.1.min.css" />
+	<link href="stylesheets/photoswipe.css" type="text/css" rel="stylesheet" />
+	<style type="text/css">
+		div.gallery-row:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+		div.gallery-item { float: left; width: 33.333333%; }
+		div.gallery-item a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
+		div.gallery-item img { display: block; width: 100%; height: auto; }
+		#Gallery1 .ui-content, #Gallery2 .ui-content { overflow: hidden; }
+	</style>
+			<link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/multilevelmenu.css" />
+
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+	<link rel="stylesheet" type="text/css" href="stylesheets/fonts.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT Sans Narrow">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/jquery.mobile-1.4.2.min.css" />
+    <script src="javascripts/jquery-1.11.1.min.js"></script>
+    <script src="javascripts/jquery.mobile-1.4.2.min.js"></script>
+    <script type='text/javascript' src="javascripts/menu_jquery.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+	<link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.circliful.min.js"></script>
+
+	<script src="demo/jquery.color.min.js"></script>
+	<script src="jquery.animateNumber.min.js"></script>
+    <script type="text/javascript" src="javascripts/simple-inheritance.min.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.animate-enhanced.min.js"></script>
+	<script type="text/javascript" src="javascripts/code-photoswipe-jQuery-1.0.11.min.js"></script>
+	<script type="text/javascript">
+
+
+
+		
+		/*
+			This example shows how to set up PhotoSwipe using jQuery Mobile.
+		*/
+		
+	$(document).ready(function(){
+		var ShadowCount = 0;
+
+		$("#trophy-img").click(function(){
+
+
+		if(ShadowCount == 0) {
+			$('#myStat').circliful();
+			$('#myStat1').circliful();
+			$('#myStat3').circliful();
+			$('#myStat4').circliful();
+
+
+
+
+		}
+
+		ShadowCount = ShadowCount + 1 
+	});
+
+		$('div.gallery-page').live('pageshow', function(e){
+					
+				// Re-initialize with the photos for the current page
+				$("div.gallery a", e.target).photoSwipe();
+				return true;
+				
+			})
+				
+		});
+	
+	</script>
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCC_35PqNHLhb9x3l9mInCVWTnFamYL9f4"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=drawing"></script>-->
+
+    <script src="javascripts/marker.js"></script>
+
+
+
+</head>
+<body>
+	<div id="wrapper">
+
+		<div data-role="page" id="Bomb-Map"><!--Difficulty Select-->
+			<div class="container">
+				<div class="sixteen columns">
+		
+					<div id="heading_font">Map</div>
+
+
+
+
+					<div id="map-canvas" style="width:405px;height:415px;"></div>
+					<div id="menu-button-map"><a href="#secondary" class="first"><img src="images/menu.png"  style="width:25px;height:25px;"></a></div>
+					<script>
+						$("a.first").pageslide();
+					</script>
+					<br>
+		
+				</div>
+			</div>
+		<a href="#Weatherpage"><!--empty need new image--></a>
+	</div>
+
+
+	<div data-role="page" id="Profile">
+		<div id="menu-button"><a href="#secondary" class="first"><img src="images/menu.png"  style="width:20px;height:20px;"></a>
+		</div>
+			<div class="sixteen columns">
+				<div id="upper-section">
+					<ul id="scene" class="scene">
+						<div id="upper-background">
+							<li class="layer" data-depth="0.2"><img src="images/background_upper.png" style="width:500px;height:300px;"></li>
+						</div>
+					</ul>
+
+
+
+       				<div id="profile-image"><img src="images/profile_picture.png" style="width:120px;height:120px;">
+	       			</div>
+	       			
+	       			<div id="profile_name">		
+					<p id="profile_font">John Doe</p>
+					</div>
+
+
+	        		<div class="container">
+						<div class="sixteen columns">
+	     	   				<div id="sub-menu">
+	        					<ul id="sub-menu-css">
+	        						<img id="about-img" src="images/profile_front.png" style="width:30px;height:30px;"></li>
+	        						<li><img id="trophy-img" src="images/points_icon.png" style="width:30px;height:30px;" ></li>
+	        						<li><img id="jumps-img" src="images/locations_jumped.png" style="width:40px;height:40px;"></li>
+	        					</ul>
+	        				</div>
+  
+	        				<div id="bottom-section-about">
+	        					<div>
+	        						<p id="quote">"To bomb, or not to bomb?"</p>
+	        					</div>
+	        					<div><p id="about">About: popping manus.....all day everyday.</p>
+	        					</div>
+
+
+	       						<div id="submenu-container-2">
+		        					<ul id="submenu-css-2">
+		        					<li><a href = "http://www.twitter.com/"><img id="twitter-img" src="images/twitter.png" style="width:40px;height:40px;"></a></li>
+		        					<li><a href = "http://www.youtube.com/"><img id="youtube-img" src="images/youtube.png" style="width:40px;height:40px;" ></a></li>
+		        					<li><a href = "https://www.facebook.com/"><img id="facebook-img" src="images/facebook.png" style="width:40px;height:40px;"></a></li>
+		        					</ul>
+								</div>
+	        				</div>
+
+        					<div id="bottom-section-trophy">
+        						
+        						<div id="jumps_done"><p div="h6">Jumps Done</p></div>
+
+        						<div id="myStat" data-dimension="90" data-text="70" data-info="New Clients" data-width="1" data-fontsize="12" data-percent="70" data-fgcolor="#61a9dc" data-="#FF6666"></div>
+
+
+        						<div id="videos_uploaded"><p div="h6">Videos Uploaded</p></div>
+        						<div id="myStat1" data-dimension="90" data-text="89" data-info="New Clients" data-width="1" data-fontsize="12" data-percent="89" data-fgcolor="#61a9dc" data-="#FFFFFF"></div>
+        			        	
+        			        	<div id="places_visited"><p div="h6">Places Visited</p></div>
+
+        						<div id="myStat3" data-dimension="90" data-text="42" data-info=" Clients" data-width="1" data-fontsize="12" data-percent="42" data-fgcolor="#61a9dc" data-="#FFFFFF"></div>
+
+        						<div id="photos_taken"><p div="h6">Photos Taken</p></div>
+        						<div id="myStat4" data-dimension="90" data-text="99" data-info="New Clients" data-width="1" data-fontsize="12" data-percent="99" data-fgcolor="#61a9dc" data-="#FFFFFF"></div>
+
+
+    						</div>
+        					<div id="bottom-section-jumps">
+       						<img src="images/jumps.jpg">
+        					</div>
+        				
+
+
+        					
+        				</div>
+					</div>
+				</div>
+	    	</div>
+		</div>
+
+
+
+
+
+
+
+
+<div data-role="page" id="Weatherpage"><!--page 2-->
+	<div class="container">
+		<div class="sixteen columns">
+
+
+
+        <div id="heading_font">Weather</div>
+		<iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=-40.918713&lon=172.969580&name=Abel Tasman&color=White&font=Agency FB&units=uk"> </iframe>
+		<hr>
+		<div id="menu-button-weather">
+		<a href="#secondary" class="first"><img src="images/menu.png"  style="width:25px;height:25px;"></a></div>
+		</div>
+	</div>
+</div>
+
+
+<div data-role="page" id="Bomb-Template">
+<div>
+<a href="#secondary" class="first"><div id="menu-upload"><img src="images/menu.png"  style="width:25px;height:25px;"></div></a>
+<script>
+	$("a.first").pageslide();
+</script>
+
+	
+
+
+
+</div>
+<div id="heading_font">Gallery</div>
+	<div data-role="content" >
+		<div class="container">
+			<div class="sixteen columns">
+					<div id="gallery-div" style="width:190px; height:px; postion:center">
+							<a href="#Gallery1" id="gallery-text">
+																<p id="gallery_font">Picture Gallery</p>
+							</a>
+					</div>
+
+					<div id="gallery-div" style="width:190px; height:px; postion:center">
+					<div id="gallery-video">
+					<a href="#Gallery2" >
+						<p id="gallery_font">Video Gallery</p></a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+<div data-role="page" id="Gallery1" class="gallery-page">
+
+	<div data-role="header">
+		<h1>First Gallery</h1>
+	</div>
+
+	<div data-role="content">	
+		
+		<div class="gallery">
+		<a href="#secondary" class="first"><div id="menu-upload"><img src="images/menu.png"  style="width:25px;height:25px;"></div></a>
+	
+			<div class="gallery-row">
+		
+				<div class="gallery-item"><a href="images/001.jpg" rel="external"><img src="images/001.jpg" alt="Image 001" /></a></div>
+				<div class="gallery-item"><a href="images/002.jpg" rel="external"><img src="images/002.jpg" alt="Image 002" /></a></div>
+				<div class="gallery-item"><a href="images/003.jpg" rel="external"><img src="images/003.jpg" alt="Image 003" /></a></div>
+				
+			</div>
+
+		
+			<div class="gallery-row">
+		
+				<div class="gallery-item"><a href="images/004.jpg" rel="external"><img src="images/004.jpg" alt="Image 004" /></a></div>
+				
+				<div class="gallery-item"><a href="images/005.jpg" rel="external"><img src="images/005.jpg" alt="Image 005" /></a></div>
+				
+				<div class="gallery-item"><a href="images/006.jpg" rel="external"><img src="images/006.jpg" alt="Image 006" /></a></div>
+		
+			</div>
+		
+			<div class="gallery-row">
+		
+				<div class="gallery-item"><a href="images/007.jpg" rel="external"><img src="images/007.jpg" alt="Image 007" /></a></div>
+				
+				<div class="gallery-item"><a href="images/008.jpg" rel="external"><img src="images/008.jpg" alt="Image 008" /></a></div>
+				
+				<div class="gallery-item"><a href="images/009.jpg" rel="external"><img src="images/009.jpg" alt="Image 009" /></a></div>
+
+			</div>
+		
+		
+		</div>
+		
+	</div>
+	
+
+	
+</div>
+
+<div data-role="page" id="Gallery2" class="gallery-page">
+
+	<div data-role="header">
+		<h1>Second Gallery</h1>
+	</div>
+
+	<div data-role="content">	
+		
+		<div class="gallery">
+		<a href="#secondary" class="first"><div id="menu-upload"><img src="images/menu.png"  style="width:25px;height:25px;"></div></a>
+			
+			<div id="bomb-videos">
+	
+				<div ><iframe width="300" height="280"src="https://www.youtube.com/embed/ZRIgHLb3PwU"></iframe></div>
+				<br>
+				
+				<div ><iframe width="300" height="280"src="https://www.youtube.com/embed/wDPaSqdb2ww"></iframe></div>
+				<br>
+				
+				<div ><iframe width="300" height="280"src="https://www.youtube.com/embed/cwZBCASKw7E"></iframe></div>
+		
+			</div>
+		
+		</div>
+		
+	</div>
+
+
+</div>
+
+
+
+<div data-role="page" id="X"><!--page 2-->
+	<div class="container">
+		<div class="sixteen columns">
+			<div id="secondary">
+				<div id="slide-menu">
+				    <ul>
+				    <li><a href="#Bomb-Map"><img id="map_icon" src="images/map-icon.png" style="width:25px;height:25px;"></a></li>
+				    <hr>
+				    <li><a href="/upload" rel="external"><img id="upload_icon" src="images/camera-icon-newX.png" style="width:30px;height:30px;"></a></li>
+				    <hr>
+				    <li><a href="#Profile"><img id="about_icon" src="images/profile_front.png" style="width:30px;height:30px;"></a></li>
+				    <hr>
+				    <li><a href="#Weatherpage"><img id="weather_icon" src="images/weather_icon.png" style="width:30px;height:30px;"></a></li>
+				    <hr>
+				    <li><a href="http://www.janszoon.org/"><img id="janszoon_icon" src="images/project-janzoon.png" style="width:30px;height:30px;"></a></li>
+				    <hr>
+				    <li><a href="index.html" rel="external"><img id="logout_icon" src="images/logo_out.png" style="width:40px;height:40px;"></a></li>
+				    </ul>
+				</div>
+			</div>
+         </div>
+    </div>
+</div>
+
+</div>
+
+
+	
+
+<!--JS
+	============================================================= -->
+<script src="deploy/jquery.parallax.js"></script>
+	<script src="javascripts/transition.js"></script>
+	<script>
+
+	// Yep, that's it!
+	$('#scene').parallax();
+
+	</script>
+
+	<script type="javascripts/tabs.js"></script>
+    <script src="javascripts/jquery.flexslider.js"></script>
+    <script src="javascripts/Whatever.js"></script>
+    <script src="javascripts/jquery-profile.js"></script>
+    <script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
+    
+
+    <script src="javascripts/jquery.pageslide.js"></script>
+        <script>
+        /* Default pageslide, moves to the right */
+        $(".first").pageslide();
+        
+        /* Slide to the left, and make it model (you'll have to call $.pageslide.close() to close) */
+        $(".second").pageslide({ direction: "left", modal: true });
+    </script>
+
+
+
+</body>
+</html>
